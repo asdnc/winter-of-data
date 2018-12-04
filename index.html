@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div class="sidenav">
-		<a href="#about">About</a> <a href="#signUpFree">Sign Up Free</a> <a href="#supportTheCause">Support the Cause</a> <a href="#contactUs">Contact Us</a> <a href="#myAccount">My Account</a>
+		<h2><a href="#about">About</a> <a href="#signUpFree">Sign Up Free</a> <a href="#supportTheCause">Support the Cause</a> <a href="#contactUs">Contact Us</a> <a href="#myAccount">My Account</a></h2>
 	</div>
 	<header id="header">
 		<img alt="winter of data logo" id="header-img" src="https://i0.wp.com/1millionwomentotech.com/wp-content/uploads/2018/10/cropped-wod-logo.png?w=2000&ssl=1">
@@ -44,23 +44,23 @@
 			</div>
 			<div class="snowflake">
 				❄
-			</div>
-			<aside>
-				Contact Us
-			</aside>
+			</div><!-- Closes the html for the snowflakes -->
 		</div>
 	</header><br>
 	<br>
 	<div class="main">
-		<div id="box-container">
-			<div id="about">
-				<p><b>About</b></p>
-				<p>1 Million Women To Tech is a 501(c)3 non-profit community organization in the Silicon Valley dedicated to empowering women, companies and societies and fueling the rise of the digital economy, by providing technical education to women.</p><br>
-				<p>We are partnering with Oxford Entrepreneurs (OE), Europe’s largest student startup society drawing members from all parts of Oxford University including undergraduates, postgraduates, and business school students. Since 2002, OE organizes Oxford Hack, the UK’s largest student hackathon and has engaged thousands of students.</p><br>
-				<p>1 Million Women To Tech brings expertise in learn to code workshops, remote education and women’s outreach while Oxford Entrepreneurs brings expertise in organizing hackathons and provides venue and marketing support.</p>
-			</div><br>
-			<br>
+		<div id="about">
+			<h3></h3>
+			<p><b>About</b></p>
+			<p>1 Million Women To Tech is a 501(c)3 non-profit community organization in the Silicon Valley dedicated to empowering women, companies and societies and fueling the rise of the digital economy, by providing technical education to women.</p><br>
+			<p>We are partnering with Oxford Entrepreneurs (OE), Europe’s largest student startup society drawing members from all parts of Oxford University including undergraduates, postgraduates, and business school students. Since 2002, OE organizes Oxford Hack, the UK’s largest student hackathon and has engaged thousands of students.</p><br>
+			<p>1 Million Women To Tech brings expertise in learn to code workshops, remote education and women’s outreach while Oxford Entrepreneurs brings expertise in organizing hackathons and provides venue and marketing support.</p>
+		</div><br>
+		<br>
+		<div class="container">
+			<!-- Contains the colums for the "About" section and the "My Account" section. -->
 			<form action="mailto:winterofdata@1millionwomentotech.com%3E;" id="contactUs" method="post" name="form">
+				<h3></h3>
 				<p><b>Contact Us</b></p><label id="name-label">* Name</label> <input id="name" maxlength="100" placeholder="Name" required="" type="text"><br>
 				<label id="email-label">* email</label> <input id="email" maxlength="50" placeholder="email@example.com" required="" type="email">
 				<div id="contact-date">
@@ -91,19 +91,23 @@
 				<br>
 				<input id="submit" name="contactUs" type="button" value="Contact Us"><br>
 			</form>
-			<div id="myAccount">
+			<div class="right" id="myAccount">
+				<h3></h3>
 				<p><b>My Account</b></p>This section is currently under construction. Check back again soon!
+			</div><!-- closes the container tage -->
+		</div>
+		<div class="container2">
+			<hr>
+			<div id="signUpFree">
+				<a href="https://www.1mw.co/wod-pre-reg?r_done=1"><strong>Sign Up Free</strong></a>
 			</div>
-			<footer>
-				<hr>
-				<div id="signUpFree">
-					<a href="https://www.1mw.co/wod-pre-reg?r_done=1"><strong>Sign Up Free</strong></a>
-				</div>
-				<div id="supportTheCause">
-					<a href="https://www.facebook.com/1millionwomentotech/"><strong>Support the Cause</strong></a>
-				</div>
-			</footer>
-		</div>Coded by <b>Kellie Truesdell</b> 
-	</div>
+		</div>
+		<div id="supportTheCause">
+			<a href="https://www.facebook.com/1millionwomentotech/"><strong>Support the Cause</strong></a>
+		</div>
+		<footer>
+			Coded by <b>Kellie Truesdell</b>
+		</footer>
+	</div><!-- closes the container2 tage -->
 </body>
 </html>
