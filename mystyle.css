@@ -1,5 +1,13 @@
 /* need to get the display to be responsive to viewport size!  The test will be that the WOD logo can always be seen in full */
 
+header {}
+h2 {
+	font-family: cursive;
+}
+h3 {
+	text-align: center;
+	text-decoration: underline;
+}
 body {
 	background: url(https://images.pexels.com/photos/794495/pexels-photo-794495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 	font-family: "Lato", sans-serif;
@@ -12,6 +20,15 @@ body {
 	/* scales down if necessary */
 	padding: 100px;
 	/* keeps wod logo from going behind the nav sidebar */
+	padding-bottom: 0px;
+	/* Keeps the space between the bottom of the img and the "About" section as small as possible */
+	padding-top: 0px;
+	/* Keeps the space between the top of the img and the top of the document as small as possible. */
+}
+@media(max-width: 541px) {
+	#header-img {
+		max-width: 95%
+	}
 }
 .sidenav {
 	width: 130px;
@@ -47,7 +64,6 @@ body {
 	background: #f6f6f6;
 	opacity: .8;
 }
-#header {}
 #snowflakes: {
 	/* from http://pajasevi.github.io/CSSnowflakes/ */
 	color: #fff;
@@ -168,36 +184,60 @@ body {
 }
 /* http://pajasevi.github.io/CSSnowflakes/ */
 
+#about {
+	text-align: center;
 }
-#box-container {
-	/* contains the about, sign up free, support the cuase, contact us, and my account elements */
-	display: inline-grid;
-	grid-template-columns: auto auto auto;
-	background-color: #2196F3;
-	padding: 10px;
-}
-#about {}
 #contactUs {
 	padding: 10px;
 	border: 4px solid black;
 	background: #F8F8F8;
 	border-radius: 10px;
 	max-width: 300px;
-	display: inline-block;
+	display: block;
+	/* resizes form till the text length is longer than the form */
 }
 #signUpFree {
 	text-align: left;
+	/* not functional */
 }
 #supportTheCause {
-	text-align: right;
+	float: right;
+	display: inline;
+	/* not functional, need it to be on the same row as "Sign Up Free" */
 }
 #myAccount {
-	border: 1px solid red;
-	justify-self: right;
+	padding: 10px;
+	border: 4px solid black;
+	background: #F8F8F8;
+	border-radius: 10px;
+	max-width: 300px;
+	display: block;
+	/ * goal is get the my accont to appear next to the "About" section, and is flexible * /
 }
-aside {}
+.right {
+	float: right;
+	/* makes the "My Account" section flaot to the right of the container for "About" and "My Account". */
+}
+.container {
+	/* contains the contact us, and my account elements */
+	column-count: 2;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+	column-rule-style: solid;
+	column-width: auto;
+}
+.conatiner2 {
+	column-count: 2;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+	column-rule-style: solid;
+	column-width: auto;
+}
 footer {
 	text-align: center;
+	/* Aligns "Coded by Kellie Truesdell" to the center */
 }
 @media screen and (max-height: 450px) {
 	.sidenav {
@@ -207,3 +247,4 @@ footer {
 		font-size: 18px;
 	}
 }
+/* need media query that will allow the "My Account" section to resize for smaller viewports (tabelts, smartphones) */
